@@ -3,193 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>여행지 비교: 일본 간사이 vs 베이징</title>
+    <title>우리의 7월 가족 여행 후보지 비교</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-            background-color: #f7f6f3; /* Notion-like background */
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-        h1, h2 {
-            color: #111;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 20px;
-        }
-         h1 {
-            font-size: 2em;
-            border-bottom: 2px solid #eee;
-        }
-        h2 {
-            font-size: 1.5em;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            margin-top: 15px;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background-color: #f8f8f8; /* Light gray background */
-            font-weight: bold;
-            width: 25%; /* Adjust column width as needed */
-        }
-        td {
-             width: 37.5%; /* Adjust column width as needed */
-        }
-         tr:nth-child(even) {
-            background-color: #f9f9f9; /* Slightly different row background */
-        }
-        .image-section {
-            margin-top: 30px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        .image-section h2 {
-            border-bottom: none;
-        }
-        .image-gallery {
-             display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
-             gap: 15px;
-             margin-top: 15px;
-        }
-        .image-gallery img {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-        }
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-         .note {
-            background-color: #fff3e0; /* Light orange background */
-            border-left: 4px solid #ffb300; /* Orange border */
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 960px; margin: 20px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { background-color: #333; color: #fff; padding: 1em 0; text-align: center; }
+        header h1 { margin: 0; }
+        nav { background-color: #444; padding: 0.5em; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .content { padding: 20px; }
+        .section { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        .section h2 { color: #333; text-align: center; margin-bottom: 20px; }
+        .option-summary { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .option-card { width: 45%; margin-bottom: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; padding: 15px; box-sizing: border-box; text-align: center; }
+        .option-card img { max-width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 10px; }
+        .option-card h3 { margin-top: 0; color: #555; }
+        .option-card p { font-size: 0.9em; }
+        .option-card a.button { display: inline-block; background-color: #5cb85c; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
+        .option-card a.button:hover { background-color: #4cae4c; }
+        footer { text-align: center; padding: 20px; background-color: #333; color: #fff; margin-top: 30px; }
     </style>
 </head>
 <body>
+    <header>
+        <h1>우리의 7월 가족 여행 후보지!</h1>
+    </header>
+    <nav>
+        <a href="index.html">메인</a>
+        <a href="japan.html">일본 (오사카/교토)</a>
+        <a href="beijing.html">중국 (베이징)</a>
+        <a href="comparison.html">종합 비교</a>
+    </nav>
     <div class="container">
-        <h1>여행지 비교: 일본 간사이 vs 베이징</h1>
+        <div class="content">
+            <div class="section">
+                <h2>어떤 곳으로 떠나볼까요?</h2>
+                <p style="text-align: center;">
+                    2025년 7월, 우리가 함께 떠날 가족 여행 후보지를 준비했습니다.<br>
+                    각 여행지의 상세 정보와 비교 내용을 확인하시고 의견 나눠주시면 좋겠습니다! 😊
+                </p>
+            </div>
 
-        <p>
-            세 분의 7월 여행 후보지인 일본 간사이(오사카/교토/나고야 일정)와 베이징을 비교하는 페이지입니다. 각 옵션의 주요 특징과 장단점을 비교하여 아버님, 어머님과 함께 최적의 여행지를 선택하는 데 참고해 주세요.
-        </p>
+            <div class="section">
+                <h2>주요 여행 후보지</h2>
+                <div class="option-summary">
+                    <div class="option-card">
+                        <img src="images/japan_main_placeholder.jpg" alt="일본 간사이 지역 대표 이미지">
+                        <h3>일본: 오사카 & 교토 (5박 6일)</h3>
+                        <p>오사카 엑스포의 활기참과 교토의 아름다운 전통을 함께 경험하는 익숙하고 편안한 여행</p>
+                        <a href="japan.html" class="button">일본 여행 자세히 보기</a>
+                    </div>
+                    <div class="option-card">
+                        <img src="images/beijing_main_placeholder.jpg" alt="중국 베이징 대표 이미지">
+                        <h3>중국: 베이징 (5박 6일)</h3>
+                        <p>웅장한 역사 유적과 현대적인 매력이 공존하는 중국의 수도, 새로운 문화 체험</p>
+                        <a href="beijing.html" class="button">베이징 여행 자세히 보기</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2>핵심 비교</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>비교 항목</th>
-                    <td>일본 간사이 일정<br>(오사카 솔로 + 교토/나고야 세 분 함께)</td>
-                    <td>베이징<br>(세 분 함께)</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>여행 기간</th>
-                    <td>7월 22일 ~ 7월 29일 (8일)</td>
-                    <td>7월 22일 이후 ~ (날짜/기간 자유롭게 선택 가능)</td>
-                </tr>
-                 <tr>
-                    <th>주요 매력</th>
-                    <td>✅ 오사카 엑스포 경험 (사용자/어머님)<br>✅ 교토의 아름다운 전통 문화/자연<br>✅ 전반적인 여행의 **매우 높은 편안함/안전성**<br>✅ 익숙한 일본 시스템</td>
-                    <td>✅ **압도적인 스케일의 역사/문화 유적** (자금성, 만리장성 등)<br>✅ **매우 다양한 힐튼 계열 호텔 선택지** (콘래드, WA 등)<br>✅ 새로운 중국 경험 (상하이와 다름)<br>✅ 현대적인 도시 일부</td>
-                </tr>
-                 <tr>
-                    <th>여행 페이스</th>
-                    <td>사용자님 오사카 3박(솔로) 후, 세 분이 합류하여<br>**교토 2박 → 나고야 2박으로 빠르게 이동** (총 4박 함께)</td>
-                    <td>**자유롭게 조절 가능** (예: 베이징 한 곳에서 4박 또는 5박 등)</td>
-                </tr>
-                 <tr>
-                    <th>세 명 투숙<br>객실 확보</th>
-                    <td>🔹 더블트리 교토, 힐튼 나고야 등<br>🔹 '세 명 투숙 가능 객실' 가용성/가격 **직접 확인 필수**<br>🔹 선택지 수는 베이징보다 적음</td>
-                    <td>🔹 베이징 도심 힐튼/콘래드/WA 등<br>🔹 '세 명 투숙 가능한 객실/스위트' 가용성/가격 **직접 확인 필수**<br>🔹 **선택지 수가 매우 다양함**</td>
-                </tr>
-                 <tr>
-                    <th>힐튼 다이아몬드<br>'뽕맛'</th>
-                    <td>♦️ 호텔/라운지 **다양성 제한적**<br>♦️ 성수기 업그레이드 불확실성 높음<br>♦️ 세 명 투숙 시 혜택 제약 가능성</td>
-                    <td>♦️ **호텔/라운지 다양성 매우 풍부** (콘래드 라운지 등)<br>♦️ 세 명 투숙 가능한 좋은 객실/스위트 찾기 용이<br>♦️ **다양한 힐튼에서 혜택 활용 기회 많음**</td>
-                </tr>
-                 <tr>
-                    <th>주요 어려움/<br>고려사항</th>
-                    <td>❌ **교토 오버투어리즘 (혼잡)**<br>❌ 엑스포 인파<br>❌ 세 분 합류 및 초반 이동 물류 복잡성 (7/22-24)<br>❌ 힐튼 업그레이드 불확실성</td>
-                    <td>⚠️ **중국 여행 '번거로움'** (인터넷, 결제, 언어 등) → 부모님 동반 시 신경 쓰임<br>⚠️ 상하이보다 **덜 깔끔할 수 있음**<br>⚠️ (오사카 솔로 후 베이징 이동 시) 세 분 합류 물류 복잡성</td>
-                </tr>
-                 <tr>
-                    <th>예상 경비<br>(상대적)</th>
-                    <td>💰💰💰 (중~상: 성수기 항공/숙박, 신칸센/기차 비용, 엑스포 입장료 등)</td>
-                    <td>💰💰💰 (중~상: 성수기 항공/숙박, 이동, 유적지 입장료 등)</td>
-                </tr>
-                 <tr>
-                    <th>세 분 동반<br>적합도</th>
-                    <td>✔️ **매우 높음 (전반적 편의성)**<br>단, 빠른 이동과 숙소/오버투어리즘 해결 필요</td>
-                    <td>✔️ 높음 (역사, 호텔)<br>단, **'번거로움' 관리**와 숙소 확인 필수</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="note">
-            <strong>✅ 중요한 확인 사항:</strong><br>
-            1. 각 도시/호텔에서 **성인 3명 투숙 가능한 객실의 실제 가격과 가용성**을 반드시 확인해야 합니다.<br>
-            2. 7월 22일 오사카행 마일리지 항공권 **발권 가능 여부 및 최종 발권**이 일본 일정 확정의 필수 조건입니다.
+            <div class="section" style="text-align:center;">
+                <h2>한눈에 비교하기</h2>
+                <p>두 여행지의 주요 특징들을 한눈에 비교해보고 싶으시다면 아래 버튼을 눌러주세요.</p>
+                <a href="comparison.html" class="button" style="background-color: #337ab7;">두 여행지 종합 비교 보기</a>
+            </div>
         </div>
-
-
-        <div class="image-section">
-            <h2>여행지 사진 (예시)</h2>
-            <p>각 도시와 잠재적 호텔의 분위기를 시각적으로 비교할 수 있는 사진들을 추가해보세요.</p>
-             <div class="image-gallery">
-                <img src="https://placehold.co/150x100?text=Kyoto+Temple" alt="교토 사찰">
-                <img src="https://placehold.co/150x100?text=Kyoto+Arashiyama" alt="교토 아라시야마">
-                <img src="https://placehold.co/150x100?text=Osaka+Expo" alt="오사카 엑스포 이미지">
-                <img src="https://placehold.co/150x100?text=Bullet+Train" alt="일본 신칸센">
-                <img src="https://placehold.co/150x100?text=Forbidden+City" alt="베이징 자금성">
-                <img src="https://placehold.co/150x100?text=Great+Wall" alt="베이징 만리장성">
-                <img src="https://placehold.co/150x100?text=Beijing+Night" alt="베이징 야경">
-                 <img src="https://placehold.co/150x100?text=Hilton+Room" alt="세 명 투숙 가능 힐튼 객실 예시">
-                <img src="https://placehold.co/150x100?text=Conrad+Lounge" alt="콘래드 라운지 예시">
-                 <img src="https://placehold.co/150x100?text=Peking+Duck" alt="베이징덕 음식 예시">
-
-             </div>
-        </div>
-
-
-        <h2>추가 고려 사항</h2>
-        <ul>
-            <li>7월의 각 도시 **날씨(더위/습도)** 대비를 철저히 해야 합니다.</li>
-            <li>베이징 선택 시, 중국 여행의 '번거로움' (인터넷, 결제 등) 관리를 어떻게 할지 미리 계획하는 것이 좋습니다 (예: VPN 설정, 결제 앱 준비 등).</li>
-            <li>오사카 선택 시, 7월 22일 항공권 '딱 하나' 남은 것을 놓치지 않도록 빠른 결정과 발권이 필요합니다.</li>
-            <li>아버님 어머님 두 분 모두 어떤 스타일의 여행을 더 선호하시는지 (전통/역사 vs 현대/문화 vs 편안함) 다시 한번 여쭤보는 것이 좋습니다.</li>
-        </ul>
-
     </div>
+    <footer>
+        <p>&copy; 2025 가족 여행 계획</p>
+    </footer>
 </body>
 </html>
