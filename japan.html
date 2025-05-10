@@ -18,19 +18,30 @@
         .subsection { margin-left: 20px; margin-bottom: 20px; }
         .subsection h3 { color: #444; border-bottom: 1px dashed #ccc; padding-bottom: 5px; }
         table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
-        th, td { padding: 8px; border: 1px solid #ddd; text-align: left; }
+        th, td { padding: 8px; border: 1px solid #ddd; text-align: left; vertical-align: top; } /* vertical-align: top 추가 */
         th { background-color: #f0f8ff; } /* Alice Blue */
         ul { list-style-type: disc; margin-left: 20px; }
         .highlight { color: #d9534f; font-weight: bold; }
         .accommodation-note { background-color: #fffacd; border-left: 5px solid #ffd700; padding: 10px; margin-top: 5px; font-size: 0.9em;}
         .food-gallery { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
         .food-gallery img { width: 120px; height: 90px; object-fit: cover; border-radius: 4px; }
-        /* Sight Gallery Styles - UPDATED */
-        .sight-gallery-container { margin-top: 10px; } /* Renamed to avoid conflict if "section sight-gallery" was used before */
-        .sight-gallery { display: flex; flex-wrap: wrap; gap: 15px; /* Spacing between items */ }
-        .sight-item { width: 160px; /* New width for the container of image + caption */ text-align: center; /* Center the caption text */ margin-bottom: 10px; }
-        .sight-item img { width: 160px;   /* New width */ height: 120px;  /* New height */ object-fit: cover; border-radius: 4px; display: block; margin-bottom: 5px; /* Space between image and caption */ }
-        .caption { font-size: 0.85em; /* Smaller font for caption */ color: #555; word-wrap: break-word; /* Prevent long names from breaking layout */ }
+        .sight-gallery-container { margin-top: 10px; }
+        .sight-gallery { display: flex; flex-wrap: wrap; gap: 15px; }
+        .sight-item { width: 160px; text-align: center; margin-bottom: 10px; }
+        .sight-item img { width: 160px; height: 120px; object-fit: cover; border-radius: 4px; display: block; margin-bottom: 5px; }
+        .caption { font-size: 0.85em; color: #555; word-wrap: break-word; }
+        /* Styles for lists within table cells for better readability - ADDED */
+        table td ul {
+            margin: 0; /* Remove default ul margin */
+            padding-left: 15px; /* Adjust left padding for bullets */
+            list-style-position: outside; /* Ensure bullets are outside the text flow */
+        }
+        table td ul li {
+            margin-bottom: 5px; /* Space between list items */
+        }
+        table td ul li:last-child {
+            margin-bottom: 0; /* No margin for the last item */
+        }
         footer { text-align: center; padding: 20px; background-color: #333; color: #fff; margin-top: 30px; }
     </style>
 </head>
@@ -98,32 +109,74 @@
                     <tbody>
                         <tr>
                             <td><strong>7/22 (화)</strong><br>오사카 도착</td>
-                            <td>- 저녁: 간사이 공항 도착 (세 분 함께)<br>- 더블트리 바이 힐튼 오사카 캐슬 이동 및 체크인<br>- 호텔 주변에서 간편한 저녁 식사</td>
+                            <td>
+                                <ul>
+                                    <li>저녁: 간사이 공항 도착 (세 분 함께)</li>
+                                    <li>더블트리 바이 힐튼 오사카 캐슬 이동 및 체크인</li>
+                                    <li>호텔 주변에서 간편한 저녁 식사</li>
+                                </ul>
+                            </td>
                             <td>석: 현지식 (호텔 근처)</td>
                         </tr>
                         <tr>
                             <td><strong>7/23 (수)</strong><br>오사카 1일차</td>
-                            <td>- <strong>사용자:</strong> 오사카 엑스포 종일 관람<br>- <strong>부모님:</strong> 오사카 엑스포 관람 또는 아래 추천 시내 관광 중 택 1<br>  <em>(시내 관광 추천: 오사카 성 및 공원, 도톤보리/신사이바시)</em></td>
+                            <td>
+                                <ul>
+                                    <li><strong>사용자:</strong> 오사카 엑스포 종일 관람</li>
+                                    <li><strong>부모님:</strong> 오사카 엑스포 관람 또는 아래 추천 시내 관광 중 택 1
+                                        <ul><li><em>시내 관광 추천: 오사카 성 및 공원, 도톤보리/신사이바시</em></li></ul>
+                                    </li>
+                                </ul>
+                            </td>
                             <td>조: 호텔식 또는 라운지<br>중: 엑스포 내 또는 현지식<br>석: 오사카 명물 (타코야키, 오코노미야키 등)</td>
                         </tr>
                         <tr>
                             <td><strong>7/24 (목)</strong><br>오사카 2일차</td>
-                            <td>- <strong>사용자:</strong> 오사카 엑스포 종일 관람<br>- <strong>부모님:</strong> 전날 활동에 따라 엑스포 또는 시내 관광 진행<br>  <em>(시내 관광 추천: 쿠로몬 시장, 시텐노지, 신세카이 등)</em></td>
+                            <td>
+                                <ul>
+                                    <li><strong>사용자:</strong> 오사카 엑스포 종일 관람</li>
+                                    <li><strong>부모님:</strong> 전날 활동에 따라 엑스포 또는 시내 관광 진행
+                                        <ul><li><em>시내 관광 추천: 쿠로몬 시장, 시텐노지, 신세카이 등</em></li></ul>
+                                    </li>
+                                </ul>
+                            </td>
                             <td>조: 호텔식 또는 라운지<br>중: 엑스포 내 또는 현지식<br>석: 자유식 (호텔 근처 또는 관심 지역)</td>
                         </tr>
                         <tr>
                             <td><strong>7/25 (금)</strong><br>오사카 → 교토</td>
-                            <td>- 오전: 오사카 호텔 체크아웃, 교토로 이동 (기차 약 30분~1시간)<br>- 더블트리 바이 힐튼 교토 스테이션 체크인<br>- 오후: 교토역 주변 탐방 또는 가까운 히가시 혼간지 방문<br>- 저녁: 기온 거리 산책 및 전통 분위기 속 저녁 식사</td>
+                            <td>
+                                <ul>
+                                    <li>오전: 오사카 호텔 체크아웃, 교토로 이동 (기차 약 30분~1시간)</li>
+                                    <li>더블트리 바이 힐튼 교토 스테이션 체크인</li>
+                                    <li>오후: 교토역 주변 탐방 또는 가까운 히가시 혼간지 방문</li>
+                                    <li>저녁: 기온 거리 산책 및 전통 분위기 속 저녁 식사</li>
+                                </ul>
+                            </td>
                             <td>조: 호텔식 또는 라운지<br>중: 교토역 식당가<br>석: 교토 가정식 또는 기온 맛집</td>
                         </tr>
                         <tr>
                             <td><strong>7/26 (토)</strong><br>교토 1일차</td>
-                            <td>- 오전 일찍: 기요미즈데라 (청수사) & 산넨자카/니넨자카 산책<br>- 점심: 니시키 시장 둘러보며 다양한 먹거리 체험<br>- 오후: 킨카쿠지 (금각사) 또는 아라시야마 (대나무숲, 도게츠교) 중 택 1~2곳<br>  <em>(오버투어리즘 고려, 동선 및 체력 안배 중요)</em></td>
+                            <td>
+                                <ul>
+                                    <li>오전 일찍: 기요미즈데라 (청수사) & 산넨자카/니넨자카 산책</li>
+                                    <li>점심: 니시키 시장 둘러보며 다양한 먹거리 체험</li>
+                                    <li>오후: 킨카쿠지 (금각사) 또는 아라시야마 (대나무숲, 도게츠교) 중 택 1~2곳
+                                        <ul><li><em>오버투어리즘 고려, 동선 및 체력 안배 중요</em></li></ul>
+                                    </li>
+                                </ul>
+                            </td>
                             <td>조: 호텔식 또는 라운지<br>중: 니시키 시장<br>석: 자유식 (가와라마치 등 시내)</td>
                         </tr>
                         <tr>
                             <td><strong>7/27 (일)</strong><br>교토 출발</td>
-                            <td>- 오전: 니조 성 또는 산주산겐도 관람 (비교적 덜 붐비는 곳)<br>- 호텔 체크아웃 및 짐 보관<br>- (선택) 마지막 교토 기념품 쇼핑 또는 카페에서 휴식<br>- 오후/저녁: 간사이 공항으로 이동하여 귀국</td>
+                            <td>
+                                <ul>
+                                    <li>오전: 니조 성 또는 산주산겐도 관람 (비교적 덜 붐비는 곳)</li>
+                                    <li>호텔 체크아웃 및 짐 보관</li>
+                                    <li>(선택) 마지막 교토 기념품 쇼핑 또는 카페에서 휴식</li>
+                                    <li>오후/저녁: 간사이 공항으로 이동하여 귀국</li>
+                                </ul>
+                            </td>
                             <td>조: 호텔식 또는 라운지<br>중: 공항 이동 전 간단한 식사</td>
                         </tr>
                     </tbody>
@@ -176,7 +229,8 @@
                     <li><strong>휴족 시간:</strong> 많이 걷게 되므로 저녁에는 휴족 시간 시트 등을 활용하여 다리 피로를 풀어주세요.</li>
                 </ul>
             </div>
-            <div class="section sight-gallery-container"> <h3>주요 명소 사진 (예시)</h3>
+             <div class="section sight-gallery-container">
+                <h3>주요 명소 사진 (예시)</h3>
                 <div class="sight-gallery">
                     <div class="sight-item">
                         <img src="images/osaka_expo_site_placeholder.jpg" alt="오사카 엑스포 행사장">
