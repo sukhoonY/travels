@@ -24,8 +24,14 @@
         .highlight { color: #d9534f; font-weight: bold; }
         .accommodation-note { background-color: #fffacd; border-left: 5px solid #ffd700; padding: 10px; margin-top: 5px; font-size: 0.9em;}
         .cost-note { background-color: #f0e68c; border-left: 5px solid #daa520; padding: 10px; margin: 10px 0; font-size: 0.9em; } /* Khaki */
-        .food-gallery, .sight-gallery { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-        .food-gallery img, .sight-gallery img { width: 120px; height: 90px; object-fit: cover; border-radius: 4px; }
+        .food-gallery { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .food-gallery img { width: 120px; height: 90px; object-fit: cover; border-radius: 4px; }
+        /* Sight Gallery Styles - UPDATED */
+        .sight-gallery-container { margin-top: 10px; }
+        .sight-gallery { display: flex; flex-wrap: wrap; gap: 15px; }
+        .sight-item { width: 160px; text-align: center; margin-bottom: 10px; }
+        .sight-item img { width: 160px; height: 120px; object-fit: cover; border-radius: 4px; display: block; margin-bottom: 5px; }
+        .caption { font-size: 0.85em; color: #555; word-wrap: break-word; }
         footer { text-align: center; padding: 20px; background-color: #333; color: #fff; margin-top: 30px; }
     </style>
 </head>
@@ -157,14 +163,33 @@
                     <li><strong>안전:</strong> 소지품 관리에 유의하고, 너무 외진 곳은 밤늦게 다니지 않는 등 기본적인 안전 수칙을 지켜주세요.</li>
                 </ul>
             </div>
-            <div class="section sight-gallery">
-                <h3>주요 명소 사진 (예시)</h3>
-                <img src="images/forbidden_city_beijing_placeholder.jpg" alt="자금성">
-                <img src="images/great_wall_beijing_placeholder.jpg" alt="만리장성">
-                <img src="images/temple_of_heaven_beijing_placeholder.jpg" alt="천단 공원">
-                <img src="images/summer_palace_beijing_placeholder.jpg" alt="이화원">
-                <img src="images/tiananmen_square_placeholder.jpg" alt="천안문 광장">
-                <img src="images/beijing_hutong_placeholder.jpg" alt="베이징 후통">
+            <div class="section sight-gallery-container"> <h3>주요 명소 사진 (예시)</h3>
+                <div class="sight-gallery">
+                    <div class="sight-item">
+                        <img src="images/forbidden_city_beijing_placeholder.jpg" alt="자금성">
+                        <p class="caption">자금성</p>
+                    </div>
+                    <div class="sight-item">
+                        <img src="images/great_wall_beijing_placeholder.jpg" alt="만리장성">
+                        <p class="caption">만리장성</p>
+                    </div>
+                    <div class="sight-item">
+                        <img src="images/temple_of_heaven_beijing_placeholder.jpg" alt="천단 공원">
+                        <p class="caption">천단 공원</p>
+                    </div>
+                    <div class="sight-item">
+                        <img src="images/summer_palace_beijing_placeholder.jpg" alt="이화원">
+                        <p class="caption">이화원</p>
+                    </div>
+                    <div class="sight-item">
+                        <img src="images/tiananmen_square_placeholder.jpg" alt="천안문 광장">
+                        <p class="caption">천안문 광장</p>
+                    </div>
+                    <div class="sight-item">
+                        <img src="images/beijing_hutong_placeholder.jpg" alt="베이징 후통">
+                        <p class="caption">베이징 후통</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
